@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main>
+      <v-container fluid fill-height>
+        <v-row justify="center">
+          <v-col md="3" class="px-10">
+              <h3>Vuetify Field <br><br> </h3>
+              <v-text-field
+                  label="Regular"
+              ></v-text-field>
+          </v-col>
+
+          <v-col md="3" class="px-10">
+              <h3>Vuetify field with Tailwind-like styles</h3>
+              <v-text-field
+                  label="Regular"
+                  class="custom-style"
+              ></v-text-field>
+          </v-col>
+
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {},
+
+  data: () => ({
+    //
+  }),
+};
+</script>

@@ -1,0 +1,26 @@
+.v-input.custom-style input{
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    padding: 0.25rem;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+.v-input.custom-style input:focus{
+    border-width: 2px;
+    border-color: #4f46e5;
+}
+.v-input.custom-style .v-label{
+    padding-left: .325rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #111827;
+}
+.v-input.custom-style.v-text-field .v-label--active{
+    transform: translateY(-23px) scale(0.75);
+}
+
+.v-input.custom-style .v-input__slot:after,
+.v-input.custom-style .v-input__slot:before{
+    display: none;
+}
