@@ -18,6 +18,7 @@
 }
 .v-input.custom-style.v-text-field .v-label--active{
     transform: translateY(-23px) scale(0.75);
+    color: #4f46e5 !important;
 }
 
 .v-input.custom-style .v-input__slot:after,
